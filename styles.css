@@ -1,7 +1,7 @@
 @font-face {
-font-family: "CircularStd-Book";
-src: url('fonts/CircularStd-Book.ttf') format('truetype');
-/* font-weight: normal;
+  font-family: "CircularStd-Book";
+  src: url("fonts/CircularStd-Book.ttf") format("truetype");
+  /* font-weight: normal;
 font-style: normal; */
 }
 
@@ -26,22 +26,54 @@ font-style: normal; */
   font-style: normal;
 } */
 
-html, body {
-  margin:0;
-  padding:0;
-  width:100%;
-  font-family: 'CircularStd-Book', Arial, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "CircularStd-Book", Arial, sans-serif;
   /* font-weight:  */
 }
 
-h1,h2,h3,h4,h5,h6 {
+iframe {
+  border: 0;
+}
+
+.frame-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: lighter;
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
-    color: inherit;
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-container {
@@ -73,10 +105,11 @@ a:hover, a:visited, a:link, a:active
   width: auto;
 }
 
-.menu-item, .menu-title {
+.menu-item,
+.menu-title {
   padding: 0;
   margin: 0;
-  color: #915AFE;
+  color: #915afe;
 }
 
 .menu-item {
@@ -107,7 +140,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .hero-body-text-action-container {
-  background-color: #915AFE;
+  background-color: #915afe;
   color: #ffffff;
   border-radius: 1000px;
   padding: 10px;
@@ -159,7 +192,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .experience-body-header-text {
-  color: #915AFE;
+  color: #915afe;
 }
 
 .experience-body-image-container {
@@ -206,7 +239,7 @@ a:hover, a:visited, a:link, a:active
 
 .features-body-header-text {
   margin-bottom: 12px;
-  color: #915AFE;
+  color: #915afe;
 }
 
 .features-body-image-container {
@@ -287,7 +320,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .contact-body-text-action-container {
-  background-color: #915AFE;
+  background-color: #915afe;
   color: #ffffff;
   border-radius: 1000px;
   padding: 10px;
@@ -340,7 +373,6 @@ a:hover, a:visited, a:link, a:active
 
 /* MOBILE */
 @media only screen and (max-width: 800px) {
-
   .founder-name {
     align-self: center;
     text-align: center;
@@ -384,7 +416,7 @@ a:hover, a:visited, a:link, a:active
   .hero-body-image-container {
     margin: 0;
     padding: 0;
-    flex:1;
+    flex: 1;
     margin-bottom: 20px;
     align-items: flex-end;
     align-self: center;
@@ -424,7 +456,7 @@ a:hover, a:visited, a:link, a:active
   .experience-body-image-container {
     margin: 0;
     padding: 0;
-    flex:1;
+    flex: 1;
     margin-bottom: 20px;
     align-items: flex-end;
     align-self: center;
@@ -458,7 +490,7 @@ a:hover, a:visited, a:link, a:active
     margin-left: 0;
     margin-right: 0;
     flex: 1;
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
@@ -471,7 +503,7 @@ a:hover, a:visited, a:link, a:active
   .features-body-image-container {
     margin: 0;
     padding: 0;
-    flex:1;
+    flex: 1;
     margin-bottom: 20px;
     align-items: flex-end;
     align-self: center;
@@ -542,7 +574,6 @@ a:hover, a:visited, a:link, a:active
     margin-right: 0;
     align-items: center;
     margin-top: 180px;
-
   }
 
   .contact-body-image {
@@ -585,7 +616,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .about-sub {
-  color: #915AFE;
+  color: #915afe;
 }
 
 .contact-top-bar {
